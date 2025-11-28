@@ -6,14 +6,13 @@
 // in whole or in part, is strictly prohibited without written permission.
 // -----------------------------------------------------------------------------
 
-import { Text, View } from "react-native";
- 
-export default function App() {
+import { Stack } from "expo-router";
+
+export default function RootLayout() {
+
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="bodyText text-blue-500">
-        Welcome to Kairo
-      </Text>
-    </View>
-  );
+    <Stack screenOptions={{headerShown:false}}>
+    </Stack>
+  
+);
 }
